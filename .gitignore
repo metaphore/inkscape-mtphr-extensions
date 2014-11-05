@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# File whitelist
+!.gitignore
+!mtphr_commons.py
+!mtphr_hsl_modifier.py
+!mtphr_hsl_modifier.inx

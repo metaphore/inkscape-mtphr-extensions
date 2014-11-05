@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+	<_name>HSL Modifier</_name>	
+	<id>com.metaphore.hslmodifier</id>
+	
+	<dependency type="executable" location="extensions">coloreffect.py</dependency>
+	<dependency type="executable" location="extensions">mtphr_commons.py</dependency>
+	<dependency type="executable" location="extensions">mtphr_hsl_modifier.py</dependency>
+	<dependency type="executable" location="extensions">simplestyle.py</dependency>
+	
+	<param name="n" type="int" min="-255" max="255" _gui-text="Hue">0</param>
+	<param name="l" type="float" min="0" precision="3" _gui-text="Lightness">1.0</param>
+	<param name="s" type="float" min="0" precision="3" _gui-text="Saturation">1.0</param>
+	
+	<effect>
+		<object-type>all</object-type>
+		<effects-menu>
+			<submenu _name="Metaphore"/>
+		</effects-menu>
+	</effect>
+	
+	<script>
+		<command reldir="extensions" interpreter="python">mtphr_hsl_modifier.py</command>
+	</script>
+	
+</inkscape-extension>
